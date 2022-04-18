@@ -1,0 +1,547 @@
+/* -------------------------- Обнуление встроенных отступов -------------------------- */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* -------------------------- Подключение шрифтов -------------------------- */
+@font-face {
+    font-family: "Gilroy";
+    src: url(../fonts/Gilroy-Regular.ttf);
+    font-weight: 400;
+}
+@font-face {
+    font-family: "Gilroy";
+    src: url(../fonts/Gilroy-Medium.ttf);
+    font-weight: 500;
+}
+@font-face {
+    font-family: "Gilroy";
+    src: url(../fonts/Gilroy-SemiBold.ttf);
+    font-weight: 600;
+}
+@font-face {
+    font-family: "Gilroy";
+    src: url(../fonts/Gilroy-Bold.ttf);
+    font-weight: 700;
+}
+/* -------------------------- Настройка всего тела сайта, указание используемого шрифта -------------------------- */
+body{
+    width: 100%;
+    background: linear-gradient(80.5deg, #83A4BD 11.55%, #A5A2B3 24.51%, #BA929B 33.33%, #BD8689 39.89%, #C46F6A 47.85%, #C65857 55.62%, #BF4145 65.14%, #9C2E37 75.49%, #7A262E 84.66%, #5B1E23 95.55%, #421F23 103.99%, #2D1C22 111.11%);;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Gilroy";
+    overflow-x: hidden;
+}
+h2{
+    font-size: 32px;
+}
+/* -------------------------- Настройка всех ссылочных элементов на сайте  -------------------------- */
+a{
+    text-decoration: none;
+}
+a:hover{
+    opacity: 0.95;
+    transform: scale(1.05);
+    cursor: pointer;
+    transition: 0.5s all;
+}
+/* -------------------------- Настройка шапки сайта, её элементов -------------------------- */
+header{
+    height: 127px;
+    width: 1440px;
+    padding: 0 139px;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    background: rgba(0, 0, 0, 0.1);
+}
+header nav{
+    width: 605px;
+    font-size: 18px;
+    font-weight: 400;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 85px;
+    margin-right: 155px;
+}
+header nav a{
+    color: #f2f2f2;
+}
+header div div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+header div div p{
+    font-size: 18px;
+    color:white;
+    font-weight: 600;
+    margin-left: 10px;
+    line-height: 160%;
+}
+header div div img{
+    width: 18px;
+    height: 18px;
+}
+header div{
+    display: flex;
+    flex-direction: column;
+}
+.OrderCallHeader{
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 160%;
+    color:white;
+    display: flex;
+}
+.HeaderFiller{
+    height:127px;
+    width: 1440px;
+}
+.number{
+    font-family: 'Gilroy';
+    font-weight: 600;
+    font-size: 18px;
+}
+/* -------------------------- Настройка первой секции, её элементов -------------------------- */
+.Sec1Div{
+    width: 1440px;
+    height: 674px;
+    display: flex;
+    padding: 0 0 0 139px;
+}
+.MainSecImg{
+    width: 758px;
+    height: 555px;
+    margin-left: -90px;
+}
+h1{
+    font-weight: 700;
+    color: white;
+    font-size: 36px;
+    width: 520px;
+    margin: 50px 0 30px 0;
+    line-height: 130%;
+}
+h1 span{
+    font-weight: 400;
+}
+.Sec1Div .CoolSides{
+    display: flex;
+    margin-top: 100px;
+}
+.Sec1Div .CoolSides div{
+    width: 145px;
+    height: 92px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    margin: 0 40px 0 15px;
+    font-size: 18px;
+    font-weight: 400;
+}
+.Sec1Div .CoolSides div img{
+    height: 32px;
+    width: 32px;
+}
+.Sec1Div .Sec1Button{
+    padding: 20px 32px;
+    border-radius: 6px;
+    color: white;
+    display: flex;
+    background-color: #f2323d;
+    width: 224px;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: "Gilroy";
+}
+.GetSmeta{
+    margin-bottom: 50px;
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 160%;
+    width: 350px;
+}
+
+@keyframes spin{
+	from{
+		transform: translate(0, 0) rotate(0deg);
+	}
+	to{
+		transform: translate(0, 0) rotate(360deg);
+	}
+}
+/* -------------------------- Настройка второй секции, её элементов -------------------------- */
+.Sec2Div{
+    width: 1440px;
+    height: 843px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 56.5px 0 0 138px;
+}
+.Sec2Div h2{
+    color: white;
+    font-size: 32px;
+    font-weight: 600;
+    width: 400px;
+    line-height: 130%;
+    margin-bottom: 40px; 
+}
+.NameLi{
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 120%;
+    margin-bottom: 20px;
+    margin-right: 87px;
+    list-style-type: none;
+    margin-top: 15px;
+}
+.RowSec2{
+    display: flex;
+    margin-bottom: 60px;
+    font-size: 18px;
+    color: white;
+    line-height: 140%;
+}
+.RowSec2 img{
+    width: 230px;
+    height: 240px;
+    margin-right: 30px;
+}
+.Sec2Div ul{
+    width: 302px;
+    margin-right: 20px;
+    margin-left: 19px;
+}
+.LightningDeffence{
+    width: 288px;
+    line-height: 140%;
+}
+.RowSec2 ul li{
+    margin-bottom: 12px;
+}
+.LightningDeffence2{
+    width: 229px;
+}
+.NameUlLi{
+    margin-left: -20px;
+}
+/* -------------------------- Настройка третьей секции, её элементов -------------------------- */
+.Sec3Div{
+    height: 842px;
+    width: 1440px;
+    padding: 80px 46px;
+}
+/* -------------------------- Настройка четвёртой секции, её элементов -------------------------- */
+.Sec4Div{
+    width: 1440px;
+    height: 564px;
+    background:rgba(255, 255, 255, 0.1);
+    padding: 80px 140px;
+    color: white;
+}
+.Sec4Div h2{
+    font-weight: 600;
+    line-height: 130%;
+    margin-bottom: 20px;
+}
+.RowSec4{
+    display: flex;
+    margin: 0 -20px;
+    flex-wrap: wrap;
+}
+.RowSec4 div{
+    margin: 20px 20px;
+    width: 360px;
+    height: 120px;
+    border-radius: 6px;
+    display: flex;
+    padding-left: 40px;
+    border: 1px solid rgba(255, 255, 255, 0.3); 
+}
+.RowSec4 div:hover{
+    border: 1px solid #f2323d;
+    background: #f2323d;
+    transition: 0.8s all;
+}
+.RowSec4 div p{
+    width: 268px;
+    align-self: center;
+}
+.RowSec4 div h2{
+    font-size: 32px;
+    margin-right: 15px;
+    margin-top: 15px;
+}
+/* -------------------------- Настройка пятой секции, её элементов -------------------------- */
+.Sec5Div{
+    height: 1070px;
+    width: 1440px;
+    display: flex;
+    flex-direction: column;
+    padding: 80px 0 0 140px;
+}
+.Sec5Div .FirstRow img{
+    width: 260px;
+    height: 366px;
+    margin: 0 20px;
+}
+.Sec5Div .FirstRow img:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}
+.Sec5Div .FirstRow{
+    margin: 0 -20px 80px -20px;
+    display: flex;
+}
+.Sec5Div .FirstRow .LastImage{
+    width: 102px;
+    height: 366px; 
+}
+.Sec5Div h2{
+    color: white;
+    font-weight: 600;
+    line-height: 130%;
+}
+.Sec5Div .ReviewsText{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.Sec5Div .ReviewsText img{
+    margin-left: 40px;
+}
+.Sec5Div .ReviewsText h2{
+    margin-right: 490px;
+}
+.Sec5Div .ReviewsText img:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}
+.Sec5Div .ReadyWorkText{
+    display: flex;
+    align-items: center;
+}
+.Sec5Div .SecondRow img{
+    width: 355px;
+    height: 300px;
+    margin: 0 20px;
+}
+.Sec5Div .SecondRow{
+    margin: 0 -20px;
+}
+.Sec5Div .SecondRow .LastImage{
+    width: 100px;
+    height: 300px;
+}
+.Sec5Div .SecondRow img:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}
+.Sec5Div .ReadyWorkText h2{
+    margin-right: 560px;
+    margin-bottom: 40px;
+}
+.Sec5Div .ReadyWorkText img{
+    margin-left: 40px;
+}
+.Sec5Div .ReadyWorkText img:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}
+/* -------------------------- Настройка шестой секции, её элементов -------------------------- */
+.Sec6Div{
+    width: 1440px;
+    height: 551px;
+    background-image: url(../images/StupidManBg.png);
+    margin-top: -29px;
+    padding: 169px 0 0 580px;
+    color: white;
+}
+.Sec6Div h2{
+    line-height: 130%;
+    font-weight: 600;
+    width: 620px;
+    margin-bottom: 40px;
+}
+.Sec6Div h2 span{
+    font-weight: 400;
+}
+.Sec6Div input{
+    width: 200px;
+    height: 58px;
+    font-size: 17px;
+    font-weight: 400;
+    padding-left: 5px;
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 6px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    margin-right: 20px;
+    color: white;
+}
+::-webkit-input-placeholder{
+    color: white;
+    font-size: 18px;
+    font-weight: 400;
+    margin-left: 25px;
+}
+.Sec6Div a{
+    width: 200px;
+    height: 58px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: #f2323d;
+    border-radius: 6px;
+}
+.Sec6Div .InputAndButtonHolder{
+    display: flex;
+}
+/* -------------------------- Настройка седьмой секции, её элементов -------------------------- */
+.Sec7Div{
+    height: 693px;
+    width: 1440px;
+    padding: 80px 0 0 138px;
+    color: white;
+}
+.Sec7Div h2{
+    font-weight: 600;
+    line-height: 130%;
+    width: 650px;
+}
+.AdjustmentsSec7{
+    display: flex;
+    align-items: center;
+}
+.AdjustmentsSec7 img{
+    margin-left: 40px;
+}
+.AdjustmentsSec7 img:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}
+.AdjustmentsSec7 h2{
+    margin-right: 100px;
+    margin-bottom: 40px;
+}
+.Sec7Div .LastImage{
+    width: 100px;
+    height: 366px;
+}
+.CertificatesAfterMan{
+    margin: 0 -20px;
+    display: flex;
+}
+.CertificatesAfterMan img{
+    margin: 0 20px;
+}
+.CertificatesAfterMan img:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}
+/* -------------------------- Настройка восьмой секции, её элементов -------------------------- */
+.Sec8Div{
+    padding: 80px 0 0 138px;
+    width: 1440px;
+    height: 600px;
+    background:rgba(255, 255, 255, 0.1);
+    color: white;
+}
+.Sec8Div h2{
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+.InvisibleText{
+    font-size: 0.5px;
+    color: transparent;
+}
+.QuestionAndAnswer{
+    width: 560px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 6px;
+    background-color: transparent;
+    height: 90px;
+    margin-bottom: 15px;
+    padding: 20px 15px 0 20px;
+}
+.QuestionAndAnswer:hover{
+    transition: 0.3s all;
+    cursor: pointer;
+    height: 150px;
+}
+.QuestionAndAnswer .ArrowInQuestions{
+    width: 24px;
+    height: 24px;
+    background-image: url(../images/SmallWhiteArrowDown.svg);
+}
+.QuestionAndAnswer:hover .ArrowInQuestions{
+    background-image: url(../images/SmallWhiteArrowTop.svg);
+}
+.QuestionAndAnswer:hover .InvisibleText{
+    font-size: 18px;
+    font-weight: 400;
+    color: white;
+    width: 400px;
+    margin-top: 20px;
+}
+.FlexIndeed{
+    display: flex;
+}
+.QuestionAndArrow{
+    display: flex;
+    justify-content: space-between;
+}
+.Question{
+    font-size: 20px;
+    font-weight: 400;
+}
+.FirstColumn{
+    margin-right: 40px;
+}
+/* -------------------------- Настройка подвала сайта, его элементов -------------------------- */
+footer{
+    width: 1440px;
+    height: 600px;
+    position: relative;
+}
+.WhiteSquare{
+    width: 500px;
+    height: 450px;
+    border-radius: 6px;
+    background-color: #fff;
+    padding: 60px;
+    margin: 80px 0 0 100px;
+    position: absolute;
+    z-index: 1000;
+}
+footer h2{
+    line-height: 130%;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+footer p{
+    font-weight: 400;
+}
+.PhoneNumber{
+    font-size: 20px;
+}
+footer .Mail{
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 35px;
+}
+footer nav{
+    display: flex;
+    margin-top: 40px;
+}
+footer nav img{
+    margin-right: 30px;
+}
+footer iframe{
+    position: absolute;
+}
